@@ -12,6 +12,8 @@
 		2E0860E31D33374F00F57937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0860E11D33374F00F57937 /* Main.storyboard */; };
 		2E0860E51D33374F00F57937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0860E41D33374F00F57937 /* Assets.xcassets */; };
 		2E0860E81D33374F00F57937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0860E61D33374F00F57937 /* LaunchScreen.storyboard */; };
+		2E0860F01D33376800F57937 /* CLLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0860EF1D33376800F57937 /* CLLazy.swift */; };
+		2E0860F21D3340B200F57937 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0860F11D3340B200F57937 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2E0860E41D33374F00F57937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0860E71D33374F00F57937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E0860E91D33374F00F57937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E0860EF1D33376800F57937 /* CLLazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLazy.swift; sourceTree = "<group>"; };
+		2E0860F11D3340B200F57937 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2E0860E41D33374F00F57937 /* Assets.xcassets */,
 				2E0860E61D33374F00F57937 /* LaunchScreen.storyboard */,
 				2E0860E91D33374F00F57937 /* Info.plist */,
+				2E0860EF1D33376800F57937 /* CLLazy.swift */,
+				2E0860F11D3340B200F57937 /* RootViewController.swift */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					2E0860D91D33374F00F57937 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 54B56XXLVZ;
 					};
 				};
 			};
@@ -135,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0860F01D33376800F57937 /* CLLazy.swift in Sources */,
 				2E0860E01D33374F00F57937 /* ViewController.swift in Sources */,
+				2E0860F21D3340B200F57937 /* RootViewController.swift in Sources */,
 				2E0860DE1D33374F00F57937 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Lazy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanxin.Lazy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxin.Lazy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Lazy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanxin.Lazy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxin.Lazy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
